@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>A Basic HTML5 Template</title>
+    <meta name="description" content="Image Upload for Web" />
+    <meta name="awkto" content="awkto" />
+
+    <meta property="og:title" content="Image Upload for Web" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="image-upload.css" />
+  </head>
+
+  <body>
+
+    <!--Initial container structure-->
+    <div class="center">
+      <div class="form-input">
+
+        <!--Creates an image preview container, normally hidden-->
+        <div class="preview">
+          <img id="file-ip-1-preview" />
+        </div>
+
+        <!--input boxes and buttons-->
+        <label for="file-ip-1">Upload Image</label>
+        <input
+          type="file"
+          id="file-ip-1"
+          accept="image/*"
+          onchange="showPreview(event);"
+        />
+      </div>
+    </div>
+
+    <script src="image-upload.js"></script>
+  </body>
+</html>
